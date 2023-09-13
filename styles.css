@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Raleway:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+.nav li{
+    display: inline;
+    padding: 2em;
+}
+
+.nav a{
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+}
+
+.nav a:hover{
+    background-color: rgba(196, 164, 132,.2) ;
+}
+
+.main-header{
+    position: fixed;
+    width: 100%;
+    background-color: rgba(196, 164, 132,.2) ;
+    height: 100px;
+}
+.main-header h1{
+    font-weight: normal;
+    color: rgba(78, 42, 5, 0.835);
+    padding: 10px;
+ 
+}
+
+.main-header nav {
+    text-align: center;
+}
+
+.foot {
+    background-color: rgba(196, 164, 132,.2);
+    padding: 0;
+    bottom: 0px;
+    width: 100%;
+  
+}
+.foot ul{
+    text-align: center;
+}
+
+.foot a:hover{ 
+    background-color: rgba(196, 164, 132,.2) ;
+    padding: 40px 10px 0px 10px;
+ 
+}
+
+.btn{
+    cursor: pointer;
+}
+
+.vids{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5em;
+    text-align: center;
+}
+.vid-image{
+    height: 200px;
+}
+
+.vid-title span{
+    display: block;
+    font-size: 1.2em;
+    padding: 10px;
+    align-items: center;
+}
+
+.vid-title button{
+    
+}
+
+.h1t{
+    text-align: center;
+}
+
+.page{
+    padding-top: 200px;
+}
