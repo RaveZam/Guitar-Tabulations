@@ -79,14 +79,27 @@
     align-items: center;
 }
 
-.vid-title button{
-    
-}
-
 .h1t{
     text-align: center;
 }
 
 .page{
     padding-top: 200px;
+}
+
+
+.cart-header{
+    font-weight: bold;
+    font-size: 1.25em;
+    color: black;
+}
+
+.cart-column{
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+.cart-row{
+    display: flex;
 }
