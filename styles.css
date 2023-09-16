@@ -8,6 +8,10 @@
     padding: 0;
 
 }
+
+body{
+    background-color: rgb(249, 247, 241);
+}
 .nav li{
     display: inline;
     padding: 2em;
@@ -58,7 +62,9 @@
 }
 
 .btn{
-    cursor: pointer;
+    cursor: pointer;  
+    padding: 10px;
+    border-radius: .3em;
 }
 
 .vids{
@@ -95,11 +101,98 @@
 }
 
 .cart-column{
+    display: flex;
+    align-items: center;
     border-bottom: 1px solid black;
     margin-right: 1.5em;
     padding-bottom: 10px;
     margin-top: 10px;
+    
 }
 .cart-row{
     display: flex;
+}
+ 
+.cart-item{
+    width: 450px 
+    
+}
+
+.cart-cost{
+    width: 200px;
+}
+
+.cart-quantity{
+    width: 350px;
+}
+
+.cart-btn{
+    margin-left: 10px;
+    color: white;
+    background-color: rgb(248, 72, 72);
+    border: none;
+}
+.cart-btn:hover{
+    background-color: red;
+}
+
+.cart-image{
+    width: 100px;
+    height: auto;
+    border-radius: .5em;
+}
+
+.cart-price{
+    font-weight: bolder;
+}
+
+.cart-input{
+    height: 50px;
+    width: 40px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0;
+    border: 1px solid rgb(86, 120, 224);
+  
+}
+
+.container{
+    margin-left: 20%;
+    margin-right: 20%;
+}  
+
+.cart-row:last-child{
+    border-bottom: 1px solid black;
+}
+.cart-row:last-child .cart-column{
+    border: none;
+}
+
+.cart-item.cart-header{
+    padding-right: 500px;
+}
+
+.cart-item.cart-column{
+    padding-right: 200px;
+}
+
+.total{
+    text-align: end;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+.total-btn{
+    display: block;
+    margin: 40px auto;
+    height: 50px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: rgb(248, 72, 72);
+    color: white;
+    border: none;
+}
+
+.total-btn:hover{
+    background-color: red;
 }
