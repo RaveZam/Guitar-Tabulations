@@ -14,6 +14,7 @@ body{
 }
 .nav li{
     display: inline;
+    
     padding: 2em;
 }
 
@@ -30,8 +31,9 @@ body{
 .main-header{
     position: fixed;
     width: 100%;
-    background-color: rgba(196, 164, 132,.2) ;
+    background-color: rgba(196, 164, 132,.2);
     height: 100px;
+    display: flex;
 }
 .main-header h1{
     font-weight: normal;
@@ -41,7 +43,8 @@ body{
 }
 
 .main-header nav {
-    text-align: center;
+    padding-top: 5%;
+    padding-left: 400px;
 }
 
 .foot {
@@ -71,8 +74,10 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 5em;
+    padding: 10px;
+    padding-top: 40px;
     text-align: center;
+
 }
 .vid-image{
     height: 200px;
@@ -87,6 +92,8 @@ body{
 
 .h1t{
     text-align: center;
+    color: black;
+    border-block: 1px rgba(196, 164, 132,.2);
 }
 
 .page{
@@ -195,4 +202,24 @@ body{
 
 .total-btn:hover{
     background-color: red;
+}
+
+.play-btn{
+    width: 80px;
+    border-radius: 50px;
+    color: white;
+    background-color: rgb(255, 0, 0);
+}
+
+.vid-image{
+   width: 450px;
+   height: auto;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   text-align: center;
+   margin: 20px;
+   
+}
+
+.mys{
+    width: 150px;
 }
