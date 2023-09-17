@@ -156,7 +156,9 @@ body{
 .cart-image{
     width: 100px;
     height: auto;
-    border-radius: .5em;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px 15px 20px 0px;
 }
 
 .cart-price{
@@ -227,7 +229,50 @@ body{
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    text-align: center;
    margin: 20px;
-   
 }
 
+.gears{
+    padding-left: 300px;
+    padding-right: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}  
 
+.gear-image{
+    width: 200px;
+    height: auto;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.gear-image-capo{
+    margin-bottom: 130px;
+}
+
+.gear-dets{
+    margin-top: 20px;
+}
+
+.add-to-cart{
+    margin-left: 10px;
+    border-radius: 50px;
+    background-color:rgb(248, 72, 72);
+    color: white;
+    border: none;
+    margin-top: 10px;
+}
+
+.add-to-cart:hover{
+    background-color:rgb(244, 35, 35);
+}
+
+.gear-box{
+    margin-top: 40px;
+}
+
+.gear-title{
+    padding-top: 150px;
+}
