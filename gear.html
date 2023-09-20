@@ -5,6 +5,7 @@
         <meta name="description" content="This is suppose to be the description">
         <link rel="stylesheet" href="styles.css" />
         <link rel="icon" href="images/guitar.png">
+        <script src="practice.js" async></script>
     </head>
     <body>
         <header class="main-header">
@@ -31,7 +32,7 @@
                             <img class="gear-image gear-image-guitar" src="images/yamaha.png">
                         </div>
                         <div class="gear-dets">
-                            <span>Yamaha FS400c</span>
+                            <span class = "gear-title">Yamaha FS400c</span>
                             <span class="cart-price" >289$</span>
                             <button class="btn add-to-cart"> Add To Cart</button>
                         </div>
@@ -41,7 +42,7 @@
                             <img class="gear-image gear-image-capo" src="images/Capo.jpg">
                         </div>
                         <div class="gear-dets">
-                            <span>G7th Performance Capo</span>
+                            <span class = "gear-title" >G7th Performance Capo</span>
                             <span class="cart-price">39.99$</span>
                             <button class="btn add-to-cart"> Add To Cart</button>
                         </div>
@@ -52,7 +53,7 @@
                             <img class="gear-image gear-image-string" src="images/strings.jpg">
                         </div>
                         <div class="gear-dets">
-                            <span>Elixir Phospor Bronze String .12 Gauge</span>
+                            <span class = "gear-title" >Elixir Phospor Bronze String .12 Gauge</span>
                             <span class="cart-price">19.99$</span>
                             <button class="btn add-to-cart"> Add To Cart</button>
                         </div>
@@ -80,10 +81,10 @@
                         <span>Yamaha FS400c</span>
                      </div>
                       <div class="cart-cost cart-column">
-                        <span class="cart-price">289$</span>
+                        <span class="cart-price cart-price-incart">$289</span>
                       </div>
                       <div class="cart-quantity cart-column">
-                        <input class="cart-input "type="number" value="1">
+                        <input class="cart-input "type="number" value="1" name="cart-qty">
                         <button class="btn cart-btn">Remove</button>
                     </div>
                 </div>
@@ -93,17 +94,17 @@
                         <span>G7th Performance Capo</span>
                     </div>
                     <div class="cart-cost cart-column">
-                        <span class="cart-price">39.99$</span>
+                        <span class="cart-price cart-price-incart">$39.99</span>
                     </div>
                     <div class="cart-quantity cart-column">
-                        <input class="cart-input" type="number" value="1">
+                        <input class="cart-input" type="number" value="2" name="cart-qty">
                         <button class="btn cart-btn">Remove</button>
                     </div>  
             </div>
         </div>
                 <div class="total">
                     <strong>Total</strong>
-                    <span> $328.99</span>
+                    <span class="total-price"> $328.99</span>
                 </div>
                 <button class="btn total-btn" type="button">Purchase</button>
         </section>
