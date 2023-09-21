@@ -20,7 +20,17 @@ function ready(){
         var addToCartBtn = addToCart[i]
         addToCartBtn.addEventListener('click', addingToCart)
     }    
+     document.getElementsByClassName('total-btn')[0].addEventListener('click', purchaseClicked)
+    }
+
+function purchaseClicked(){
+    var cartItems = document.getElementsByClassName('cart-parent')[0]
+    var totalPrice = document.getElementsByClassName('total-price')[0]
+    alert("Thank you For Your Purchase! ")
+    cartItems.innerHTML = ""
+    totalPrice.innerHTML = "$0"
 }
+
 function quantityChanged(event){
     var qtychange = event.target
     if (isNaN(qtychange.value) || qtychange.value <= 0 ){
@@ -45,6 +55,7 @@ function addingToCart(event){
     updatePrice()
     ready()
 }
+
 
     function addItemToCart(title,price,img){
         var cartRow = document.createElement('div')
@@ -72,11 +83,7 @@ function addingToCart(event){
             </div>`
         cartRow.innerHTML = cartRowContents
         cartItems.appendChild(cartRow)  
-        purchase(cartRow)
-      
     }
-
-
 
 function updatePrice(){
     var cart = document.getElementsByClassName("cart-parent")[0]
@@ -98,11 +105,8 @@ function updatePrice(){
  document.getElementsByClassName("total-price")[0].innerText = "Total: " + "$" + total 
 }
 
-document.getElementsByClassName("total-btn")[0].addEventListener('click', purchase)
 
-function purchase(cartRow){
-    console.log("clic")
-}
+
 
 
 
