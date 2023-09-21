@@ -39,14 +39,40 @@ function addingToCart(event){
     var button = event.target
     var shopItem = button.parentElement.parentElement
     var title = shopItem.getElementsByClassName("gear-title")[0].innerText
-    var priceElement = shopItem.getElementsByClassName("cart-price")[0]
+    var price = shopItem.getElementsByClassName("cart-price")[0].innerText
     var img = shopItem.getElementsByClassName("gear-image")[0].src
-    var price = parseFloat(priceElement.innerText.replace("$", ""))
     addItemToCart(title,price,img)
+    updatePrice()
+    ready()
 }
 
     function addItemToCart(title,price,img){
+        var cartRow = document.createElement('div')
+        cartRow.classList.add('cart-row')
+        var cartItems = document.getElementsByClassName('cart-parent')[0]
+        var cartItemNames = cartItems.getElementsByClassName('gear-title')
 
+        for (var i = 0; i < cartItemNames.length; i++){
+            if(cartItemNames[i].innerText == title){
+                alert("This item is in your cart")
+                return
+            }
+        }
+        var cartRowContents = `
+           <div class="cart-item cart-column">
+                <img class="cart-image" src="${img}" height="100">
+                <span class = "gear-title">${title}</span>
+            </div>
+            <div class="cart-cost cart-column">
+                <span class="cart-price cart-price-incart">${price}</span>
+            </div>
+            <div class="cart-quantity cart-column">
+                <input class="cart-input "type="number" value="1" name="cart-qty">
+                <button class="btn cart-btn">Remove</button>
+            </div>`
+        cartRow.innerHTML = cartRowContents
+        cartItems.appendChild(cartRow)  
+        purchase(cartRow)
       
     }
 
@@ -69,7 +95,13 @@ function updatePrice(){
     
  }
  total = Math.round(total *100) / 100
- document.getElementsByClassName("total-price")[0].innerText = "$" + total 
+ document.getElementsByClassName("total-price")[0].innerText = "Total: " + "$" + total 
+}
+
+document.getElementsByClassName("total-btn")[0].addEventListener('click', purchase)
+
+function purchase(cartRow){
+    console.log("clic")
 }
 
 

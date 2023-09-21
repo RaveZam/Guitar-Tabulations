@@ -273,6 +273,11 @@ body{
     margin-top: 40px;
 }
 
-.gear-title{
+.gear-title-header{
     padding-top: 150px;
+}
+
+.total-price{
+    display: grid;
+    text-align: center;
 }
