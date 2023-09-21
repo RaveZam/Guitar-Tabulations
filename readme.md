@@ -1,7 +1,5 @@
 Play Buttons On Video Screen
 
-Replace Top Left Image With Maja's Logo 
-
 Make the About me Page similar to Sungha Jung 
 With Why I Started Guitar
 How i Learned
