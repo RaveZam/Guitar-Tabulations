@@ -12,6 +12,7 @@
 body{
     background-color: rgb(249, 247, 241);
 }
+
 .nav li{
     display: inline;
     padding:1em;
@@ -21,12 +22,15 @@ body{
     text-decoration: none;
     color: rgb(107, 101, 86);
     padding: 30px 20px 30px 20px ;
+    transition: all .5s ease;
+   
 }
 
 .nav a:hover{
     background-color: rgba(196, 164, 132,.2);
     border-radius: 50px;
     color: rgb(0, 0, 0);
+   
 }
 
 .main-header{
@@ -40,7 +44,6 @@ body{
     font-weight: normal;
     color: rgba(78, 42, 5, 0.835);
     padding: 10px;
- 
 }
 
 .main-header nav {
@@ -48,21 +51,83 @@ body{
     padding-left: 300px;
 }
 
-.foot {
-    background-color: rgba(196, 164, 132,.2);
-    padding: 0;
-    bottom: 0px;
+.foot{
+    background-color: rgba(221, 202, 118, 0.2);
     width: 100%;
-  
-}
-.foot ul{
-    text-align: center;
 }
 
-.foot a:hover{ 
-    background-color: rgba(196, 164, 132,.2) ;
-    padding: 40px 10px 0px 10px;
- 
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-me{
+    background-color: rgba(196, 164, 132,.2);
+    padding-top: 33px;
+    width: 80%;
+    font-size: 15px;
+    padding-left: 5px;
+}
+.about-me a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+}
+.about-me a:hover{
+    
+    padding-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+.about-me ul li{
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.about-me ul li:not(:last-child) {
+    padding-bottom: 10px;
+}
+
+ul{
+    list-style:none;
+}
+
+.links{
+    width: 20%;
+    padding: 20px 2px 20px 2px;
+    background-color: rgba(196, 164, 132,.2);
+}
+
+.links li{
+    display: inline;    
+    padding: 10px 5px 0px 5px;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+
+.links h1{
+    padding-bottom: 20px;
+}
+
+.iconlinks{ 
+    padding: 30px 10px 0px 10px;
+    border-radius: 40px;
+}
+
+.iconlinks:hover{
+    background-color: rgba(196, 164, 132,.2);
+}
+
+.icons{
+    height: 40px;
+    width: 40px;
+    opacity: 0.7;
+}
+.icons:hover{
+    filter: opacity(1) drop-shadow(0 0 white);
+    height: 40px;
+    width: 40px;
 }
 
 .btn{
@@ -77,12 +142,12 @@ body{
     justify-content: space-around;
     padding: 10px;
     padding-top: 40px;
-    text-align: center;
-
+    text-align: center; 
 }
 .vid-image{
     height: 200px;
     border-radius: 40px;
+    transition: all 0.3s ease;
 
 }
 
@@ -90,7 +155,8 @@ body{
     height: 250px;
     width: auto;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-   text-align: center;
+    text-align: center;
+
 }
 
 .vid-title span{
@@ -103,11 +169,15 @@ body{
 .h1t{
     text-align: center;
     color: black;
-    border-block: 1px rgba(196, 164, 132,.2);
+    padding-top: 150px;
+}
+
+.h2t{
+    text-align: center;
 }
 
 .page{
-    padding-top: 200px;
+    padding-top: 150px;
 }
 
 
@@ -172,7 +242,6 @@ body{
     text-align: center;
     padding: 0;
     border: 1px solid rgb(86, 120, 224);
-  
 }
 
 .container{
