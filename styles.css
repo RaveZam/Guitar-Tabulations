@@ -52,6 +52,7 @@ body{
 }
 
 .foot{
+
     background-color: rgba(221, 202, 118, 0.2);
     width: 100%;
 }
@@ -348,4 +349,71 @@ ul{
 .total-price{
     display: grid;
     text-align: center;
+}
+
+.tab-container{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.tab-row{
+    padding: 10px 15px 10px 10px;
+    border-radius: 5px;
+    background-color: blanchedalmond;
+    display: flex;
+    width: 680px;
+}
+
+.tab-row:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.tab-title{
+    padding: 5px 10px 5px 10px;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.tab-tuning{
+    padding-top: 15px;
+    width: 50%;
+    text-align: center;
+}
+
+.tab-buy{
+    width: 25%;
+    display: flex;
+    align-items: center; 
+ 
+}
+
+.tab-icon-link{
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.tab-icon-link:hover{
+    opacity: 1;
+    border-radius: 30px;
+    padding-left: 5px;
+}
+
+.tab-button{
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+    background-color: rgba(222, 184, 135, 0.767);
+    
+    transition: all 0.5s ease;
+    border-radius: 10px;
+}
+
+.tab-button:hover{
+    background-color: rgb(206, 157, 94);
+}
+
+.tab-price{
+    font-size: larger;
 }
