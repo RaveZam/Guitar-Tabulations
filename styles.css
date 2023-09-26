@@ -114,10 +114,12 @@ ul{
 .iconlinks{ 
     padding: 30px 10px 0px 10px;
     border-radius: 40px;
+    opacity: .5;
+    transition: all 0.5s ease;
 }
 
 .iconlinks:hover{
-    background-color: rgba(196, 164, 132,.2);
+   opacity: 1;
 }
 
 .icons{
@@ -369,6 +371,11 @@ ul{
     margin-bottom: 10px;
 }
 
+.tab-row:first-child{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
 .tab-title{
     padding: 5px 10px 5px 10px;
     display: flex;
@@ -416,4 +423,60 @@ ul{
 
 .tab-price{
     font-size: larger;
+}
+
+.cart-title{
+
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.tab-shop-row{
+    width: 800px;
+    display: flex;
+    background-color: blanchedalmond;
+    padding: 10px;
+    border-radius: 40px;
+    border-bottom: 1px solid black;
+}
+
+.tab-shop-container{
+    display: flex;
+    justify-content: center;
+}
+
+.tab-shop-row:not(:last-child){
+    margin-bottom: 10px;
+}
+
+
+.tab-shop-total{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.tab-panel-title{
+    padding-left: 20px;
+    background-color: rgb(249, 247, 241);
+}
+
+.tab-title-panel{
+    font-size: 13px;
+    padding-bottom: 5px;
+}
+
+.tab-panel-tuning{
+    padding-top: 5px;
+    width: 50%;
+    text-align: center;
+    font-size: 13px;
+}
+
+.tab-purchase-btn{
+    height: 50px;
+    width: 70px;
+    border-radius: 50px;
+    margin-top: 10px;
 }
