@@ -38,11 +38,11 @@ function insert(tabsong,tabartist,tabtuning){
 
     var cartrowcontents = `
          <div class="tab-title">
-            <span> Strangers </span>
-            <span> Kenya Grace </span>
+            <span> ${tabsong} </span>
+            <span> ${tabartist} </span>
         </div>
         <div class="tab-tuning">
-            <span> CGCGCE Open-C</span>
+            <span> ${tabtuning} </span>
         </div>
         <div class="tab-buy">
             <h1 class="tab-price"> $7.99</h1>
