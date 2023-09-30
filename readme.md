@@ -10,9 +10,6 @@ When i Started making youtube vidoes
  etc etc
  Find other websites to copy the design.
 
-Center All Images 
 
-Center Shop Section
 
-Make Buy Tabs Section "Remove Images and just make it lists like Eddie Van der Meer's" 
-and then Remake the cart section from Test to there.
+

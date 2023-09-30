@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Raleway:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Lato:wght@100;300&family=Mooli&display=swap');
 *{
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
@@ -10,45 +10,109 @@
 }
 
 body{
-    background-color: rgb(249, 247, 241);
+   background-color: rgb(249, 247, 241);
 }
 
-.nav li{
-    display: inline;
-    padding:1em;
+
+.main-header{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(254, 236, 210, 0.523);
+    transition: all 0.5s ease;
+    z-index: 2;
+   
+   
+}
+
+.main-header.scrolled{
+    .navigation{
+        padding-top: 20px;
+    }
+    .name-title{
+        padding-top: 8px;
+        padding-bottom: 10px;
+        color: #8B4513;
+    }
+    .nav a{
+        color: black;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+       
+    }
+
+    .nav a:hover{
+        background-color: rgba(206, 157, 94, 0.714);
+         .main-header{
+            background-color: rgb(24, 20, 6);
+        }
+    }
+    
+   background-color: rgba(249, 247, 241, 0.61);
+   height: 60px;
+
+}
+
+.navigation{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: end;
+    height: 100%;
+    padding-top: 30px;
+    transition: all 0.5s ease;
+}
+
+.name-title{
+    font-family: 'Inter', sans-serif;
+    font-weight: lighter;
+    padding-left: 40px;
+    padding-top: 25px;
+    font-size: 30px;
+    color: rgba(20, 19, 19, 0.996);
+    transition: all 0.5s ease;
+}   
+
+
+@media (max-width: 700px) {
+    .name-title{
+        display: none;
+    }
+
+    .tab-column{
+        width: 300px;
+        justify-content: center;
+    }
+
+    .tab-row{
+        width: 20%;
+    }
 }
 
 .nav a{
     text-decoration: none;
-    color: rgb(107, 101, 86);
-    padding: 30px 20px 30px 20px ;
-    transition: all .5s ease;
-   
+    color: rgb(0, 0, 0);
+    transition: all 0.5s ease;
+    border-radius: 100px;
+    background-size: 150% auto;
 }
 
 .nav a:hover{
-    background-color: rgba(196, 164, 132,.2);
-    border-radius: 50px;
-    color: rgb(0, 0, 0);
-   
+    padding-right: 10px;
 }
 
-.main-header{
-    position: fixed;
-    width: 100%;
-    background-color: rgba(196, 164, 132,.2);
-    height: 100px;
-    display: flex;
+.nav li{
+    display: inline;
+    padding-left: 30px;
+    padding-right: 50px;
+    transition: all 0.5s ease;
 }
-.main-header h1{
-    font-weight: normal;
-    color: rgba(78, 42, 5, 0.835);
-    padding: 10px;
-}
-
-.main-header nav {
-    padding-top: 5%;
-    padding-left: 300px;
+.nav{
+    padding-right: 40px;
 }
 
 .foot{
@@ -151,6 +215,7 @@ ul{
     height: 200px;
     border-radius: 60px;
     transition: all 0.4s ease;
+  
 
 }
 
@@ -196,7 +261,7 @@ ul{
     margin-right: 1.5em;
     padding-bottom: 10px;
     margin-top: 10px;
-     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    
     
 }
 .cart-row{
@@ -359,6 +424,7 @@ ul{
     padding-top: 30px;
     display: flex;
     justify-content: center;
+   
 }
 
 .tab-row{
@@ -444,16 +510,26 @@ ul{
     border-bottom: 1px solid black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 15px;
-    
+    animation: fadeIn 0.5s; 
+    transition: opacity 2s ease;
 }
 
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+
+ 
 .tab-shop-container{
     display: flex;
     justify-content: center;
 }
-
-
-
 
 .tab-shop-total{
     padding-top: 10px;
@@ -467,6 +543,7 @@ ul{
    margin-right: 40%;
    border-radius: 20px;
     border-top: 2px solid black;
+    transition: all 1s ease;
 }
 
 .tab-panel-title{
@@ -493,3 +570,6 @@ ul{
     border-radius: 50px;
     margin-top: 10px;
 }
+
+
+ 

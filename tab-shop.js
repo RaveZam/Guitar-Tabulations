@@ -16,7 +16,17 @@ function ready(){
     var button = addbtn[i]
     button.addEventListener('click', addtocart)
    }
+
+   document.getElementsByClassName('tab-purchase-btn')[0].addEventListener('click', itempurchase)
 }
+function itempurchase(){
+    var items = document.getElementsByClassName('tab-shop-column')[0]
+    var price = document.getElementsByClassName('tab-shop-finalprice')[0]
+    items.innerHTML = ""
+    price.innerHTML = "Total: $0 "
+    alert('Thank you for purchasing!')
+}  
+
 
 function addtocart(event){
     var button = event.target
@@ -24,22 +34,27 @@ function addtocart(event){
     var tabsong = tabitem.getElementsByClassName("songname")[0].innerText
     var tabartist = tabitem.getElementsByClassName('artist')[0].innerText
     var tabtuning = tabitem.getElementsByClassName('tuning')[0].innerText
-
-    insert(tabsong,tabartist,tabtuning)
+    var iconlink = tabitem.getElementsByClassName('tab-icon-link')[0]
+    insert(tabsong,tabartist,tabtuning,iconlink)
     ready()
     updatePrice()
 
 }
-function insert(tabsong,tabartist,tabtuning){
+function insert(tabsong,tabartist,tabtuning,iconlink){
     var tabshoprow = document.createElement('div')
     tabshoprow.classList.add('tab-shop-row')
-
     var parent = document.getElementsByClassName('tab-shop-column')[0]
-
+    var tabsongname = parent.getElementsByClassName('songname')
+    for (var i = 0; i < tabsongname.length; i++ ){
+        if (tabsongname[i].innerText == tabsong){
+            alert("This Item is already in your cart")
+            return
+        }
+    }
     var cartrowcontents = `
          <div class="tab-title">
-            <span> ${tabsong} </span>
-            <span> ${tabartist} </span>
+            <span class = "songname"> ${tabsong} </span>
+            <span class = "artist"> ${tabartist} </span>
         </div>
         <div class="tab-tuning">
             <span> ${tabtuning} </span>
@@ -47,7 +62,7 @@ function insert(tabsong,tabartist,tabtuning){
         <div class="tab-buy">
             <h1 class="tab-price"> $7.99</h1>
             <button class="btn tab-button tab-button-remove" type="button"> Remove</button> 
-            <a class="tab-icon-link" href="https://www.youtube.com/watch?v=qLDfxY3aG4c&ab_channel=RunielleRaven" target="_blank"><img class="tab-icon" src="images/youtube.png" width="50px"></a>
+            <a class="tab-icon-link" href="${iconlink.href}" target="_blank"><img class="tab-icon" src="images/youtube.png" width="50px"></a>
         </div>
     `
     tabshoprow.innerHTML = cartrowcontents
@@ -57,8 +72,8 @@ function insert(tabsong,tabartist,tabtuning){
 
 function removeitem(event){
     var button = event.target
-    button.parentElement.parentElement.remove()
-    updatePrice()
+        button.parentElement.parentElement.remove()
+    updatePrice() 
 }
 
 function updatePrice(){
@@ -69,11 +84,24 @@ function updatePrice(){
         cartrow = cartRows[i]
         var price = document.getElementsByClassName('tab-price')[0]
         price = parseFloat(price.innerText.replace('$', ''))
-        console.log(price)
-    
         total = total + price
     }
     total = Math.round(total * 100)/ 100
     document.getElementsByClassName('tab-shop-finalprice')[0].innerText = "Total: " + "$" + total
 }
 
+
+const header = document.getElementsByClassName('main-header')[0]
+
+function handleScroll(){
+    const scrollY = window.scrollY;
+
+    // Add a class to the header when scrolling down
+    if (scrollY > 30) { // Adjust the threshold as needed
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+}
+
+window.addEventListener('scroll', handleScroll);

@@ -61,8 +61,6 @@ function addingToCart(event){
         var cartRow = document.createElement('div')
         cartRow.classList.add('cart-row')
         var cartItems = document.getElementsByClassName('cart-parent')[0]
-
-        
         var cartItemNames = cartItems.getElementsByClassName('gear-title')
 
         for (var i = 0; i < cartItemNames.length; i++){
