@@ -11,6 +11,11 @@
 
 body{
    background-color: rgb(249, 247, 241);
+   
+}
+
+.body.scrolled{
+    background-color: black;
 }
 
 
@@ -22,8 +27,8 @@ body{
     background-color: rgba(254, 236, 210, 0.523);
     transition: all 0.5s ease;
     z-index: 2;
-   
-   
+    border-bottom: 1px solid rgb(23, 2, 2);
+
 }
 
 .main-header.scrolled{
@@ -52,6 +57,7 @@ body{
     }
     
    background-color: rgba(249, 247, 241, 0.61);
+
    height: 60px;
 
 }
@@ -215,8 +221,9 @@ ul{
     height: 200px;
     border-radius: 60px;
     transition: all 0.4s ease;
-  
-
+}
+.lol{
+    font-size: 15px;
 }
 
 .vid-image:hover{
