@@ -28,6 +28,7 @@ body{
     transition: all 0.5s ease;
     z-index: 2;
     border-bottom: 1px solid rgb(23, 2, 2);
+    backdrop-filter: blur(5px);
 
 }
 
@@ -55,11 +56,55 @@ body{
             background-color: rgb(24, 20, 6);
         }
     }
-    
    background-color: rgba(249, 247, 241, 0.61);
-
    height: 60px;
+}
 
+.slide-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.slide{
+    position: relative;
+    left: -100px; /* Initial position (off-screen to the left) */
+    animation: slide 1s ease forwards;
+}
+
+.slide2{
+    padding-top: 30px;
+}
+
+.slide.slide-out{
+    animation: slide-out 2s ease forwards;
+}
+
+.welcome-slide{
+    font-size: 50px;
+}
+
+@keyframes slide-out {
+    0% {
+        left: 0%;
+    }
+    100%{
+        left: 100%;
+    }
+    
+}
+
+@keyframes slide{
+    0%{
+        left: -100%;
+    }
+
+    100%{
+        left: 0;
+    }
 }
 
 .navigation{
@@ -441,6 +486,11 @@ ul{
     display: flex;
     width: 680px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.tab-row:hover{
+    background-color: rgb(252, 214, 156);
 }
 
 .tab-row:not(:last-child){
