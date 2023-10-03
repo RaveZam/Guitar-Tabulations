@@ -10,12 +10,14 @@
 }
 
 body{
-   background-color: rgb(249, 247, 241);
-   
+  
+   background-color: rgba(255, 213, 141, 0.704);
+   overflow-x: hidden;
 }
 
-.body.scrolled{
-    background-color: black;
+.body{
+    transition: all 1s ease;
+ 
 }
 
 
@@ -66,21 +68,23 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .slide{
+    font-size: 50px;
     position: relative;
     left: -100px; /* Initial position (off-screen to the left) */
     animation: slide 1s ease forwards;
 }
 
 .slide2{
-    padding-top: 30px;
+    font-size: 40px;
+    padding-top: 60px;
+    padding-left: 10px;
 }
 
 .slide.slide-out{
-    animation: slide-out 2s ease forwards;
+    animation: slide-out 3s ease forwards;
 }
 
 .welcome-slide{
@@ -89,14 +93,13 @@ body{
 
 @keyframes slide-out {
     0% {
-        left: 0%;
+        left:0%;
     }
     100%{
         left: 100%;
     }
     
 }
-
 @keyframes slide{
     0%{
         left: -100%;
@@ -262,6 +265,11 @@ ul{
     padding-top: 40px;
     text-align: center; 
 }
+
+.vid{
+    position: relative;
+}
+
 .vid-image{
     height: 200px;
     border-radius: 60px;
@@ -293,6 +301,25 @@ ul{
 
 .h2t{
     text-align: center;
+    position: relative;
+}
+
+.slide-title{
+    opacity: 0%;
+    left: -100px;
+    animation: appearFromTop 1s ease forwards;
+}
+
+
+@keyframes appearFromTop {
+    0% {
+        opacity: 0;
+        left: -100px;
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+        left: 0; /* Moves to its final position */
+    }
 }
 
 .page{
@@ -489,7 +516,7 @@ ul{
     transition: all 0.3s ease;
 }
 
-.tab-row:hover{
+.tab-row:hover:not(:first-child){
     background-color: rgb(252, 214, 156);
 }
 
@@ -498,6 +525,7 @@ ul{
 }
 
 .tab-row:first-child{
+    background-color: rgba(255, 255, 255, 0);
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
@@ -629,4 +657,11 @@ ul{
 }
 
 
- 
+.cursor-frame {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    pointer-events: none; /* Ensures the cursor frame doesn't interfere with interactions */
+}

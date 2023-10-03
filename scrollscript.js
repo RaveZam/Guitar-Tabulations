@@ -7,7 +7,7 @@ function handleScroll(){
     const scrollY = window.scrollY;
 
     // Add a class to the header when scrolling down
-    if (scrollY > 30) { // Adjust the threshold as needed
+    if (scrollY > 100) { // Adjust the threshold as needed
         header.classList.add('scrolled');
         slide.classList.add('slide-out')
         slide2.classList.add('slide-out')
