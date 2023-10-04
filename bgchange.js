@@ -13,3 +13,4 @@ window.addEventListener('scroll', () => {
         scrollingElement.style.backgroundColor = 'rgba(245, 211, 153, 0.77)'; // Restore the default background color
     }
 });
+//
