@@ -10,6 +10,6 @@ window.addEventListener('scroll', () => {
     if (scrollPosition > threshold) {
         scrollingElement.style.backgroundColor = 'rgba(248, 235, 213, 0.77)'; // Change to your desired background color
     } else {
-        scrollingElement.style.backgroundColor = 'rgba(255, 213, 141, 0.704)'; // Restore the default background color
+        scrollingElement.style.backgroundColor = 'rgba(245, 211, 153, 0.77)'; // Restore the default background color
     }
 });
