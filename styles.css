@@ -63,22 +63,17 @@ body{
 @media screen and (max-width: 768px) {
 
     .navigation{
-       
+        padding-right: 10px;
     }
-    .nav{
     
+    .main-header.scrolled{
+        .nav li{
+          padding-right: 8px;
+        }
     }
     .nav a {
-        font-size: 20px;
-        padding-left: 0px ;
-        padding-right: 0px;
-   
+        font-size: 12px;
     }
-    .nav li{
-     
-       
-    }
-
     .name-title{
         display: none;
     }
@@ -96,7 +91,46 @@ body{
     .links{
         visibility: hidden;
     }
-  
+    /* Tabs Section */
+    .tab-container{
+        .tab-row{
+            width: 400px;
+
+            .tab-icon-link{
+                display: none;
+            }
+            .tab-title{
+                width: 22%;
+            }
+            .songname{
+                font-size: 15px;
+                font-weight: bold;
+            }
+        }
+        
+    }
+    .tab-shop-column{
+        .tab-shop-row{
+            width: 400px;
+        }
+        .songname{
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .tab-icon-link{
+            display: none;
+        }
+        .tab-title{
+            width: 20%;
+        }
+        .tab-button-remove{
+            width: 50px;
+            font-size: 8px;
+    
+        }
+
+       
+    }
 }
 
 
@@ -335,7 +369,7 @@ ul{
 
 .h2t.scrolled{
     opacity: 0%;
-    top: -100px;
+    left: -100px;
     animation: appearFromTop 1s ease forwards;
 }
 
@@ -343,11 +377,11 @@ ul{
 @keyframes appearFromTop {
     0% {
         opacity: 0;
-        top: -100px;
+        left: -100px;
     }
     100% {
         opacity: 1; /* Fully visible */
-        top: 0; /* Moves to its final position */
+        left: 0; /* Moves to its final position */
     }
 }
 
