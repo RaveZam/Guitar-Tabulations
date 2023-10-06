@@ -723,5 +723,31 @@ ul{
     
     pointer-events: none; /* Ensures the span doesn't interfere with interactions */
     transition: transform 0.2s ease; /* Add a smooth transition effect */
+}
 
+
+.about-me-container{
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.about-me-column{
+  
+    display: flex;
+    padding-top: 150px;
+    width: 50%;
+}
+
+.about-me-desc{
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.about-me-title{
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    
 }
