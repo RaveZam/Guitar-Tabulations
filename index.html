@@ -6,7 +6,9 @@
         <link rel="stylesheet" href="styles.css"/>
         <link rel="icon" href="images/guitar.png">
         <script src="scrollscript.js" async></script>
-        <script src="bgchange.js" async></script>
+        <script src="mouse.js" async></script>
+        <script src="customcursor.js" async></script>
+       
     </head>
     <body class="body">
         <header class="main-header">
@@ -25,19 +27,28 @@
             <h1 class ="name-title" >Runielle Raven |</h1>
              </div>
         </header>
-        <section class="intro">
+        <div class="cursor-dot" data-cursor-dot></div>
+        <div class="cursor-outline" data-cursor-outline></div>
+        <section>
             <div class="slide-container">
-                <h1 class="slide welcome-slide moving">Welcome!</h1>
+                <span class="slide welcome-slide moving" data-speed="4">Welcome!</span>
                 <span class="slide slide2 moving"> To my Guitar Portfolio</span>
+
             </div>
+       </section>
+       <section>
+        <div class="mini-about-me">
+            <span class="mini-about-me-desc">Self Thought Fingerstyle Guitarist From The Philippines </span>
+            <img class="profilepic" src="images/fbdp.jpg" >
+        </div>
        </section>
         <section>
             <div class="page">
                 <div class="slide-title">
-                     <h1 class="h2t mov">Highlight Videos</h1>  
+                     <h1 class="h2t">Highlight Videos</h1>  
                 </div>
             <div class="vids">      
-                <div class="vid">
+                <div class="vid vid-slide1">
                     <a href="https://www.youtube.com/watch?v=ClQ0_Rf0Ez0&ab_channel=RunielleRaven" target="_blank">
                         <img class ="vid-image" src="images/kill.jpg">
                       </a>
@@ -45,7 +56,7 @@
                             <span>SZA - Kill Bill</span>
                        </div>
                  </div>    
-                 <div class="vid">
+                 <div class="vid vid-slide2">
                     <a href="https://www.youtube.com/watch?v=qLDfxY3aG4c&ab_channel=RunielleRaven" target="_blank">
                         <img class ="vid-image" src="images/strangersbg.jpg">
                       </a>
@@ -53,7 +64,7 @@
                             <span>Kenya Grace - Strangers</span>
                        </div>
                  </div>  
-                   <div class="vid">
+                   <div class="vid vid-slide3">
                     <a href="https://www.youtube.com/watch?v=zaJY2nPfp_8&ab_channel=RunielleRaven" target="_blank">
                         <img class ="vid-image" src="images/churchbg.jpg">
                     </a>
@@ -61,7 +72,7 @@
                                 <span>Take Me To Church - Hozier</span>
                             </div>
                    </div>
-                   <div class="vid">
+                   <div class="vid vid-slide4">
                     <a href="https://www.youtube.com/watch?v=BwbNAG1BQQI&ab_channel=RunielleRaven" target="_blank">
                     <img class ="vid-image" src="images/tofbg.jpg">
                     </a>

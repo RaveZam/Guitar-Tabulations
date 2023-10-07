@@ -1,23 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Raleway:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Lato:wght@100;300&family=Mooli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Lato:wght@100;300&family=Mooli&family=Prata&family=Roboto&display=swap');
 *{
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     font-family: 'Raleway', sans-serif;
+
+    
     margin: 0;
     padding: 0;
 }
+
 
 body{
   
    background-color: rgba(245, 211, 153, 0.77);
    overflow-x: hidden;
+ 
+   
 }
 
 .body{
     transition: all 1s ease;
- 
 }
+
+.body.section2scroll{
+    background-color: rgba(253, 239, 217, 0.77);
+}
+
+.body.scrolled{
+    background-color: rgba(249, 237, 218, 0.77);
+}
+
 
 
 .main-header{
@@ -30,7 +44,7 @@ body{
     z-index: 2;
     border-bottom: 1px solid rgb(23, 2, 2);
     backdrop-filter: blur(5px);
-
+  
 }
 
 .main-header.scrolled{
@@ -143,16 +157,19 @@ body{
 }
 
 .slide{
-    font-size: 50px;
+   
     position: relative;
     left: -100px; /* Initial position (off-screen to the left) */
     animation: slide 1s ease forwards;
+    font-family: 'Prata', serif;
+
 }
 
 .slide2{
-    font-size: 40px;
+    font-size: 60px;
     padding-top: 60px;
     padding-left: 10px;
+    color: rgb(49, 45, 45);
 }
 
 .slide.slide-out{
@@ -160,7 +177,9 @@ body{
 }
 
 .welcome-slide{
-    font-size: 50px;
+   
+    font-weight: 500;
+    font-size: 80px;
 }
 
 @keyframes slide-out {
@@ -319,6 +338,7 @@ ul{
 }
 
 .vids{
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -361,6 +381,7 @@ ul{
 }
 
 .h2t{
+    opacity: 0%;
     position: relative;
     text-align: center;
     font-size: 30px;
@@ -369,7 +390,7 @@ ul{
 
 .h2t.scrolled{
     opacity: 0%;
-    left: -100px;
+    top: -100px;
     animation: appearFromTop 1s ease forwards;
 }
 
@@ -377,11 +398,11 @@ ul{
 @keyframes appearFromTop {
     0% {
         opacity: 0;
-        left: -100px;
+        top: -100px;
     }
     100% {
         opacity: 1; /* Fully visible */
-        left: 0; /* Moves to its final position */
+        top: 0; /* Moves to its final position */
     }
 }
 
@@ -743,6 +764,7 @@ ul{
 .about-me-desc{
     padding-left: 10px;
     font-size: 20px;
+    font-weight: lighter;
 }
 
 .about-me-title{
@@ -750,4 +772,100 @@ ul{
     width: 50%;
     text-align: center;
     
+}
+
+.profilepic{
+    position: relative;
+    border-radius: 500px;
+    width: auto;
+    height: 500px;
+    margin: 100px;
+    opacity: 0%;
+}
+.profilepic.profilescrolled{
+    animation: appearfromleft 1s ease forwards; 
+}
+
+@keyframes appearfromleft {
+    0%{
+         opacity: 0%;
+        left: 100%;}
+    100%{
+        opacity: 100%;
+        left: 0%;}
+    
+}
+
+.mini-about-me-desc{
+    position: relative;
+    font-size: 70px;
+    padding-left: 10px;
+    padding-right: 20px;
+    text-align: right;
+    opacity: 0%;
+}
+
+.mini-about-me-desc.descscrolled{
+    animation: appearfromright 1s ease forwards;
+}
+
+@keyframes appearfromright {
+    0%{
+        opacity: 0%;
+        right: 100%;
+    }
+    100%{
+        right: 0%;
+        opacity: 100%;
+    }
+}
+.mini-about-me{
+   display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+   
+}
+
+.vid-slide1{
+    opacity: 0%;
+}
+.vid-slide1.highlightslide1{
+    animation: vidslide1 1s ease forwards;
+}
+
+
+
+@keyframes vidslide1 {
+    0%{
+        opacity: 0%;
+        right: 100%;
+    }
+    100%{
+        opacity: 100%;
+        right: 0%;
+    }
+}
+
+.cursor-dot{
+    width: 5px;
+    height: 5px;
+    background-color: rgb(137, 106, 5);
+}
+
+.cursor-outline{
+    width: 30px;
+    height: 30px;
+    border: 2px solid hsla(45, 88%, 27%, 0.862);
+}
+
+.cursor-dot,
+.cursor-outline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 5;
+    pointer-events: none;
 }

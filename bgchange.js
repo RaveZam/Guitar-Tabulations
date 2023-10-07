@@ -12,5 +12,12 @@ window.addEventListener('scroll', () => {
     } else {
         scrollingElement.style.backgroundColor = 'rgba(245, 211, 153, 0.77)'; // Restore the default background color
     }
+
+    const section3thr = 900;
+    if (scrollPosition > section3thres) {
+        scrollingElement.style.backgroundColor = 'rgba(248, 235, 213, 0.77)'; // Change to your desired background color
+    } else {
+        scrollingElement.style.backgroundColor = 'rgba(245, 211, 153, 0.77)'; // Restore the default background color
+    }
 });
 //
