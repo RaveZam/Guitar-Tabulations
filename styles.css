@@ -16,12 +16,12 @@ body{
   
    background-color: rgba(245, 211, 153, 0.77);
    overflow-x: hidden;
- 
-   
+
 }
 
 .body{
     transition: all 1s ease;
+    
 }
 
 .body.section2scroll{
@@ -32,6 +32,13 @@ body{
     background-color: rgba(249, 237, 218, 0.77);
 }
 
+.body.dark{
+    background-color: rgba(249, 204, 131, 0.77);
+}
+
+.main-header.darkheader{
+    background-color: rgba(251, 214, 156, 0.77);
+}
 
 
 .main-header{
@@ -147,14 +154,51 @@ body{
     }
 }
 
+.section1{
+    position: relative;
+    height: 100vh;
+}
+
 
 .slide-container{
+    position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.curve{
+    position: absolute;
+    height: 225px;
+    width: 100%;
+    bottom: 0;
+}
+
+.curve::before{
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 80%;
+    width: 55%;
+    height: 100%;
+    background-color: rgba(245, 211, 153, 0.77);
+    transform: translate(80%, 60%);
+}
+
+.curve::after{
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 80%;
+    width: 55%;
+    height: 100%;
+    background-color: rgba(249, 237, 218, 0.77);
+    transform: translate(-4%, 20%);
+    z-index: -1;
+}
+
 
 .slide{
    
@@ -175,11 +219,11 @@ body{
 .slide.slide-out{
     animation: slide-out 3s ease forwards;
 }
-
-.welcome-slide{
-   
+ .welcome-slide{
+    
     font-weight: 500;
     font-size: 80px;
+    
 }
 
 @keyframes slide-out {
@@ -249,6 +293,8 @@ body{
 }
 
 .foot{
+    
+    bottom: 0;
     width: 100%;
 }
 
@@ -345,6 +391,7 @@ ul{
     padding: 10px;
     padding-top: 40px;
     text-align: center; 
+    
 }
 
 .vid{
@@ -407,7 +454,8 @@ ul{
 }
 
 .page{
-    padding-top: 150px;
+    margin-top: 200px;
+   
 }
 
 
@@ -774,6 +822,11 @@ ul{
     
 }
 
+.mini-about-me-section{
+    width: 100%;
+    height: 120vh;
+}
+
 .profilepic{
     position: relative;
     border-radius: 500px;
@@ -859,6 +912,10 @@ ul{
     border: 2px solid hsla(45, 88%, 27%, 0.862);
 }
 
+.page{
+    padding-top: 100px;
+}
+
 .cursor-dot,
 .cursor-outline{
     position: fixed;
@@ -869,3 +926,49 @@ ul{
     z-index: 5;
     pointer-events: none;
 }
+
+.experience{
+    width: 100%;
+    height: 100vh;
+}
+
+.time{
+    position: relative;
+    width: 110%;
+    margin: 50px;
+    opacity: 0%;
+    right: -100%;
+    
+}
+
+.time.scroll{
+    animation: appearfromright 1s ease forwards;
+}
+
+
+.experience-desc{
+    position: relative;
+    font-family: 'Prata', serif;
+    display: flex;
+    font-size: 150px;
+    padding-left: 20%;
+    opacity: 0%;
+
+}
+
+.experience-desc.scroll{
+    animation: appearfromleft 1s ease forwards;
+}
+
+.experience-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.page-vids{
+    height: 100vh;
+    margin-bottom: 100px;
+}
+
