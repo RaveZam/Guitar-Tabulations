@@ -6,8 +6,8 @@ const body = document.getElementsByClassName('body')[0]
 const profile = document.getElementsByClassName('profilepic')[0]
 const profiledesc = document.getElementsByClassName('mini-about-me-desc')[0]
 const vidslide1 = document.getElementsByClassName('vid-slide1')[0]
-const time = document.getElementsByClassName('time')[0]
-const expdesc = document.getElementsByClassName('experience-desc')[0]
+const tabs = document.getElementsByClassName('tabcontainer')[0]
+const tabsdesc = document.getElementsByClassName('tabs-desc')[0]
 
 let isScrolling = false;
 
@@ -58,8 +58,8 @@ function handleScroll(){
     if (scrollY > 1200) { // Adjust the threshold as needed
         body.classList.add('dark')
         header.classList.add('darkheader')
-        time.classList.add('scroll')
-        expdesc.classList.add('scroll')
+        tabs.classList.add('scroll')
+        tabsdesc.classList.add('scroll') 
     } else {
        
         

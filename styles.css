@@ -849,7 +849,12 @@ ul{
     
 }
 
+.mini-leftsection{
+    width: 100%;
+}
+
 .mini-about-me-desc{
+    display: flex;
     position: relative;
     font-size: 70px;
     padding-left: 10px;
@@ -916,6 +921,12 @@ ul{
     padding-top: 100px;
 }
 
+.page-vids{
+    height: 100vh;
+    margin-bottom: 100px;
+}
+
+
 .cursor-dot,
 .cursor-outline{
     position: fixed;
@@ -927,48 +938,81 @@ ul{
     pointer-events: none;
 }
 
-.experience{
+.tabssection{
     width: 100%;
     height: 100vh;
 }
 
-.time{
+.tabs-container{
     position: relative;
-    width: 110%;
-    margin: 50px;
-    opacity: 0%;
-    right: -100%;
-    
+    display: flex;
+    align-items: center;
+  
 }
 
-.time.scroll{
+.tabcontainer{  
+    position: relative;
+    display: flex;
+    height: 100ch;
+    width: 50%;
+    align-items: center;
+    opacity: 0%;
+}
+.tabcontainer.scroll{
     animation: appearfromright 1s ease forwards;
 }
 
-
-.experience-desc{
+.tab-images{
     position: relative;
-    font-family: 'Prata', serif;
-    display: flex;
-    font-size: 150px;
-    padding-left: 20%;
-    opacity: 0%;
-
+    width: auto;
+    height: 500px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
-.experience-desc.scroll{
+.tab1{
+    left: 110px;
+}
+
+.tab2{
+    top: 30px;
+    left: 20px;
+}
+
+.tab3{
+    right: 500px;
+    top: 50px;
+}
+
+.tabs-desc{
+    position: relative;
+    font-family: 'Prata', serif;
+    font-size: 80px;
+    opacity: 0%;
+}
+
+.tabs-desc.scroll{
     animation: appearfromleft 1s ease forwards;
 }
 
-.experience-container{
-    width: 100%;
+.about-me-button{
+    position: relative;
     display: flex;
-    align-items: center;
-
+    left: 85%;
+    top:20px
 }
 
-.page-vids{
-    height: 100vh;
-    margin-bottom: 100px;
+.button{
+    background-color: rgba(0, 0, 0, 0);
+    padding: 20px;
+    cursor: pointer;
+    font-weight: bolder;
 }
+
+
+
+
+
+
+
 

@@ -9,4 +9,6 @@ function parallax(e){
 
     slide.style.transform = `translateX(${x}px) translateY(${y}px)`
     slide2.style.transform = `translateX(${x}px) translateY(${y}px)`
+
+    
 }
