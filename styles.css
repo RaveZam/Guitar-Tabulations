@@ -860,10 +860,14 @@ ul{
     padding-left: 10px;
     padding-right: 20px;
     text-align: right;
+}
+
+.mini-leftsection{
+    position: relative;
     opacity: 0%;
 }
 
-.mini-about-me-desc.descscrolled{
+.mini-leftsection.descscrolled{
     animation: appearfromright 1s ease forwards;
 }
 
@@ -984,29 +988,62 @@ ul{
     top: 50px;
 }
 
+.tabs-desc-container{
+    position: relative;
+    opacity: 0%;
+}
 .tabs-desc{
     position: relative;
     font-family: 'Prata', serif;
     font-size: 80px;
-    opacity: 0%;
 }
 
-.tabs-desc.scroll{
+.tabs-desc-container.scroll{
     animation: appearfromleft 1s ease forwards;
 }
 
 .about-me-button{
-    position: relative;
+
+    position: absolute;
     display: flex;
     left: 85%;
-    top:20px
+    top: 110%;
+    background-color: rgba(222, 184, 135, 0.767);
+    transition: all 0.5s ease;
+    
+}
+
+.about-me-button:hover{
+    background-color: rgba(216, 166, 101, 0.767);
+    padding: 25px;
+}
+
+.tabs-button{
+    position: absolute;
+    display: flex;
+    background-color: rgba(255, 235, 210, 0.867);
+    transition: all 0.5s ease;
+}
+
+.tabs-button:hover{
+    background-color: rgba(252, 238, 222, 0.867);
+    padding: 25px;
 }
 
 .button{
-    background-color: rgba(0, 0, 0, 0);
+    border: none;
     padding: 20px;
     cursor: pointer;
     font-weight: bolder;
+    border-radius: 50px;
+}
+
+.button:hover{
+   
+}
+
+.btnlink{
+    text-decoration: none;
 }
 
 

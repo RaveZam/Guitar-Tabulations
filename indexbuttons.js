@@ -1,0 +1,1 @@
+const tabsbtn = document.getElementsByClassName('tabs-button')[0]

@@ -4,10 +4,10 @@ const slide2 = document.getElementsByClassName('slide2')[0]
 const h2slide = document.getElementsByClassName('h2t')[0]
 const body = document.getElementsByClassName('body')[0]
 const profile = document.getElementsByClassName('profilepic')[0]
-const profiledesc = document.getElementsByClassName('mini-about-me-desc')[0]
+const profiledesc = document.getElementsByClassName('mini-leftsection')[0]
 const vidslide1 = document.getElementsByClassName('vid-slide1')[0]
 const tabs = document.getElementsByClassName('tabcontainer')[0]
-const tabsdesc = document.getElementsByClassName('tabs-desc')[0]
+const tabsdesc = document.getElementsByClassName('tabs-desc-container')[0]
 
 let isScrolling = false;
 
@@ -65,7 +65,7 @@ function handleScroll(){
         
     }
 
-    if (scrollY > 1800) { // Adjust the threshold as needed
+    if (scrollY > 2000) { // Adjust the threshold as needed
         body.classList.remove('dark')
         header.classList.remove('darkheader')
         h2slide.classList.add('scrolled')
