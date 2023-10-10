@@ -165,6 +165,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow:hidden;
 }
 
 .curve{
@@ -172,29 +173,6 @@ body{
     height: 225px;
     width: 100%;
     bottom: 0;
-}
-
-.curve::before{
-    content: '';
-    display: block;
-    position: absolute;
-    border-radius: 100% 80%;
-    width: 55%;
-    height: 100%;
-    background-color: rgba(245, 211, 153, 0.77);
-    transform: translate(80%, 60%);
-}
-
-.curve::after{
-    content: '';
-    display: block;
-    position: absolute;
-    border-radius: 100% 80%;
-    width: 55%;
-    height: 100%;
-    background-color: rgba(249, 237, 218, 0.77);
-    transform: translate(-4%, 20%);
-    z-index: -1;
 }
 
 
@@ -206,10 +184,10 @@ body{
 }
 
 .slide2{
-    font-size: 60px;
+    font-size: 70px;
     padding-top: 60px;
     padding-left: 10px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  
     
 }
 
@@ -218,8 +196,8 @@ body{
 }
  .welcome-slide{
     font-weight: 500;
-    font-size: 80px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    font-size: 90px;
+ 
     
 }
 
@@ -820,8 +798,11 @@ ul{
 }
 
 .mini-about-me-section{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    background-color: rgba(143, 75, 7, 0.647);
     width: 100%;
     height: 120vh;
+    z-index: 2;
 }
 
 .profilepic{
@@ -969,6 +950,7 @@ ul{
     height: 500px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
     text-align: center;
+    z-index: 2;
 }
 
 .tab1{
@@ -1005,14 +987,14 @@ ul{
     display: flex;
     left: 85%;
     top: 110%;
-    background-color: rgba(222, 184, 135, 0.767);
+    background-color: rgba(244, 208, 161, 0.767);
     transition: all 0.5s ease;
     
 }
 
 .about-me-button:hover{
-    background-color: rgba(216, 166, 101, 0.767);
-    padding: 25px;
+    background-color: rgba(253, 243, 230, 0.767);
+   
 }
 
 .tabs-button{
@@ -1024,7 +1006,6 @@ ul{
 
 .tabs-button:hover{
     background-color: rgba(252, 238, 222, 0.867);
-    padding: 25px;
 }
 
 .button{
@@ -1032,7 +1013,7 @@ ul{
     padding: 20px;
     cursor: pointer;
     font-weight: bolder;
-    border-radius: 50px;
+    border-radius: 5px;
 }
 
 .btnlink{
@@ -1047,8 +1028,9 @@ ul{
     background-color: rgba(255, 235, 210, 0.867);
     top: 20%;
     left: 30%;
-    opacity: 80%;
+    opacity: 50%;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 5px 0 rgba(0, 0, 0, 0.5);
+    z-index: 0;
 }
 
 .circle2{
@@ -1061,6 +1043,7 @@ ul{
     right: 10%;  
     opacity: 80%;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 5px 0 rgba(0, 0, 0, 0.5);
+    z-index: 0;
 }
 
 .circle3{
@@ -1073,6 +1056,7 @@ ul{
     left: -10%;  
     opacity: 80%;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 5px 0 rgba(0, 0, 0, 0.5);
+    z-index: 0;
 }
 
 .circle4{
@@ -1085,6 +1069,7 @@ ul{
     left: 90%;
     opacity: 80%;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 5px 0 rgba(0, 0, 0, 0.5);
+    z-index: 0;
 }
 
 .sheetnote{
@@ -1100,22 +1085,32 @@ ul{
 .notes1{
     position: absolute;
     left: 40px;
-    transform: rotate(45deg);
+    transform: rotate(25deg);
     opacity: 50%;
 }
 
 .notes2{
     position: absolute;
     top: 30px;
-    transform: rotate(50deg);
+    transform: rotate(-20deg);
     opacity: 50%;
 }
 
 .notes3{
     position: absolute;
     left: 80%;
-    transform: rotate(25deg);
+    transform: rotate(15deg);
     opacity: 50%;
+}
+
+.tabs-container{
+    .notes1{
+    right: 20%;
+    z-index: 0;
+    }
+    .notes2{
+        z-index: 3;
+    }
 }
 
 

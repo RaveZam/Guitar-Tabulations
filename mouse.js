@@ -6,8 +6,8 @@ function parallax(e){
     var slide2 = document.getElementsByClassName("slide2")[0]
     const speed = layer.getAttribute('data-speed')
 
-    const x = (window.innerWidth - e.pageX*speed)/120
-    const y = (window.innerHeight - e.pageY*speed)/120
+    const x = (window.innerWidth - e.pageX*speed)/200
+    const y = (window.innerHeight - e.pageY*speed)/200
 
     slide.style.transform = `translateX(${x}px) translateY(${y}px)`
     slide2.style.transform = `translateX(${x}px) translateY(${y}px)`
