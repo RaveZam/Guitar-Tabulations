@@ -147,10 +147,8 @@ body{
         .tab-button-remove{
             width: 50px;
             font-size: 8px;
-    
-        }
 
-       
+        }
     }
 }
 
@@ -201,28 +199,27 @@ body{
 
 
 .slide{
-   
     position: relative;
     left: -100px; /* Initial position (off-screen to the left) */
     animation: slide 1s ease forwards;
     font-family: 'Prata', serif;
-
 }
 
 .slide2{
     font-size: 60px;
     padding-top: 60px;
     padding-left: 10px;
-    color: rgb(49, 45, 45);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    
 }
 
 .slide.slide-out{
     animation: slide-out 3s ease forwards;
 }
  .welcome-slide{
-    
     font-weight: 500;
     font-size: 80px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
     
 }
 
@@ -1038,13 +1035,82 @@ ul{
     border-radius: 50px;
 }
 
-.button:hover{
-   
-}
-
 .btnlink{
     text-decoration: none;
 }
+
+.circle1{
+    border-radius: 50%;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 235, 210, 0.867);
+    top: 20%;
+    left: 30%;
+    opacity: 80%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.circle2{
+    border-radius: 50%;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(206, 157, 94);
+    bottom: 10%;
+    right: 10%;  
+    opacity: 80%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.circle3{
+    border-radius: 50%;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(206, 157, 94);
+    bottom: 10%;
+    left: 20%;  
+    opacity: 80%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.sheetnote{
+    position: absolute;
+    opacity: 40%;
+}
+.notes{
+    position: absolute;
+    width: 80px;
+    height: auto;
+   
+}
+
+.notes1{
+    position: absolute;
+    left: 40px;
+    transform: rotate(-25deg);
+    opacity: 50%;
+}
+
+.notes2{
+    position: absolute;
+    top: 30px;
+    transform: rotate(25deg);
+    opacity: 50%;
+}
+
+.notes3{
+    position: absolute;
+    right: 80px;
+    transform: rotate(25deg);
+    opacity: 50%;
+}
+
+
+
+
+
 
 
 
