@@ -14,7 +14,7 @@
 
 body{
   
-   background-color: rgba(245, 211, 153, 0.77);
+    background-color: rgba(253, 239, 217, 0.77);    
    overflow-x: hidden;
 
 }
@@ -1042,8 +1042,8 @@ ul{
 .circle1{
     border-radius: 50%;
     position: absolute;
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
     background-color: rgba(255, 235, 210, 0.867);
     top: 20%;
     left: 30%;
@@ -1054,8 +1054,8 @@ ul{
 .circle2{
     border-radius: 50%;
     position: absolute;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     background-color: rgb(206, 157, 94);
     bottom: 10%;
     right: 10%;  
@@ -1066,11 +1066,23 @@ ul{
 .circle3{
     border-radius: 50%;
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 500px;
+    height: 500px;
     background-color: rgb(206, 157, 94);
-    bottom: 10%;
-    left: 20%;  
+    bottom: -20%;
+    left: -10%;  
+    opacity: 80%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.circle4{
+    border-radius: 50%;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(206, 157, 94);
+    top: -30%;
+    left: 90%;
     opacity: 80%;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 5px 0 rgba(0, 0, 0, 0.5);
 }
@@ -1081,28 +1093,27 @@ ul{
 }
 .notes{
     position: absolute;
-    width: 80px;
+    width: 200px;
     height: auto;
-   
 }
 
 .notes1{
     position: absolute;
     left: 40px;
-    transform: rotate(-25deg);
+    transform: rotate(45deg);
     opacity: 50%;
 }
 
 .notes2{
     position: absolute;
     top: 30px;
-    transform: rotate(25deg);
+    transform: rotate(50deg);
     opacity: 50%;
 }
 
 .notes3{
     position: absolute;
-    right: 80px;
+    left: 80%;
     transform: rotate(25deg);
     opacity: 50%;
 }
