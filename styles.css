@@ -273,7 +273,8 @@ body{
     padding-right: 40px;
 }
 
-.foot{
+footer{
+    margin-top: 100px;
     bottom: 0;
     width: 100%;
     z-index: 5;
@@ -622,7 +623,6 @@ ul{
     padding-top: 30px;
     display: flex;
     justify-content: center;
-    padding-bottom: 150px;
    
 }
 
@@ -811,6 +811,7 @@ ul{
 .mini-about-me-section{
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 8px 20px 0 rgba(0, 0, 0, 0.5);
     background-color: rgba(208, 127, 45, 0.647);
+    background: linear-gradient(to left, rgba(208, 127, 45, 0.647), rgba(255, 224, 173, 0.649));
     width: 100%;
     height: 120vh;
     z-index: 2;
@@ -823,6 +824,8 @@ ul{
     height: 500px;
     margin: 100px;
     opacity: 0%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    
 }
 .profilepica{
     width: 400px;
@@ -975,8 +978,8 @@ ul{
     position: relative;
     display: flex;
     align-items: center;
-  
 }
+
 
 .tabcontainer{  
     position: relative;
@@ -1035,6 +1038,8 @@ ul{
     background-color: rgb(252, 214, 176);
     transition: all 0.5s ease;
     margin-top: 30px;
+    border: none;
+    
    
 }
 
@@ -1044,26 +1049,27 @@ ul{
    
 }
 
+
 .tabs-button{
     position: relative;
     display: flex;
-    background-color: rgba(208, 127, 45, 0.647);
+    background-color: rgb(208, 127, 45);
     transition: all 0.5s ease;
+    border: none;
 }
 
 .tabs-button:hover{
     transform: translateX(10px);
-    background-color: rgba(202, 109, 16, 0.647);
+    background-color: rgb(202, 109, 16);
 }
 
 .button{
-    border: none;
     padding: 20px;
     cursor: pointer;
-    border-radius: 5px;
-    font-size: 20px;
-    font-weight: lighter;
-    
+    border-radius: 100px;
+    font-size: 21px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 3px 10px 0 rgba(0, 0, 0, 0.5);
+
 }
 
 .btnlink{
