@@ -5,9 +5,9 @@
         <meta name="description" content="This is suppose to be the description">
         <link rel="stylesheet" href="styles.css"/>
         <link rel="icon" href="images/guitar.png">
-        <script src="scrollscript.js" async></script>
-        <script src="mouse.js" async></script>
-        <script src="customcursor.js" async></script>
+        <script src="scripts/scrollscript.js" async></script>
+        <script src="scripts/mouse.js" async></script>
+        <script src="scripts/customcursor.js" async></script>
        
     </head>
     <body class="body">
@@ -30,15 +30,17 @@
         <div class="cursor-dot" data-cursor-dot></div>
         <div class="cursor-outline" data-cursor-outline></div>
         <section class="section1">
+            <div class="wrapper">
             <div class="slide-container">
-                <div class="circle1 layer" data-speed="-5"></div>
-                <div class="circle2 layer" data-speed="10"></div>
-                <div class="circle3 layer" data-speed="2"></div>
-                <div class="circle4 layer" data-speed="2"></div>
+                <div class="circle1 layer circles" data-speed="-5"></div>
+                <div class="circle2 layer circles" data-speed="10"></div>
+                <div class="circle3 layer circles" data-speed="2"></div>
+                <div class="circle4 layer circles" data-speed="2"></div>
               
                 <span class="slide welcome-slide moving layer" data-speed="2">Welcome!</span>
                 <span class="slide slide2 moving layer" data-speed="3" > To my Guitar Portfolio </span>   
             </div>
+        </div>
        </section>
        <section class="mini-about-me-section">
         <div class="mini-about-me">
@@ -64,7 +66,7 @@
              <div class ="tabs-desc-container ">
                 <span class ="tabs-desc" data-speed="5"> Looking For Tabs? </span>
                 <a class="btnlink" href="tabs-shop.html">
-                <button class="button tabs-button"> Get Tabs</button>
+                <button class="button tabs-button"> Download Tabs</button>
                 </a>
              </div>
         </div>    

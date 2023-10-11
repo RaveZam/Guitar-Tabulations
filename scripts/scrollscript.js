@@ -6,6 +6,9 @@ const body = document.getElementsByClassName('body')[0]
 const profile = document.getElementsByClassName('profilepic')[0]
 const profiledesc = document.getElementsByClassName('mini-leftsection')[0]
 const vidslide1 = document.getElementsByClassName('vid-slide1')[0]
+const vidslide2 = document.getElementsByClassName('vid-slide2')[0]
+const vidslide3 = document.getElementsByClassName('vid-slide3')[0]
+const vidslide4 = document.getElementsByClassName('vid-slide4')[0]
 const tabs = document.getElementsByClassName('tabcontainer')[0]
 const tabsdesc = document.getElementsByClassName('tabs-desc-container')[0]
 
@@ -35,17 +38,13 @@ function handleScroll(){
         header.classList.add('scrolled');
         slide.classList.add('slide-out')
         slide2.classList.add('slide-out')
-        h2slide.classList.add('scrolled')
 
     } else {
         header.classList.remove('scrolled');
         slide.classList.remove('slide-out') 
         slide2.classList.remove('slide-out') 
-        h2slide.classList.remove('scrolled') 
     }
-
     if (scrollY > 300) { // Adjust the threshold as needed
-
         body.classList.add('section2scroll')
         profile.classList.add('profilescrolled')
         profiledesc.classList.add('descscrolled')
@@ -55,7 +54,7 @@ function handleScroll(){
         body.classList.remove('section2scroll')
         
     }
-    if (scrollY > 1200) { // Adjust the threshold as needed
+    if (scrollY > 1500) { // Adjust the threshold as needed
         body.classList.add('dark')
         header.classList.add('darkheader')
         tabs.classList.add('scroll')
@@ -65,19 +64,20 @@ function handleScroll(){
         
     }
 
-    if (scrollY > 2000) { // Adjust the threshold as needed
+    if (scrollY > 2200) { // Adjust the threshold as needed
         body.classList.remove('dark')
         header.classList.remove('darkheader')
         h2slide.classList.add('scrolled')
-        body.classList.remove('section2scroll')
-       
+        body.classList.remove('section2scroll') 
         body.classList.add('scrolled')
-        vidslide1.classList.add('highlightslide1')
-       
+        vidslide1.classList.add('highlightslide') 
+        vidslide2.classList.add('highlightslide') 
+        vidslide3.classList.add('highlightslide') 
+        vidslide4.classList.add('highlightslide') 
+        
     } else {
-       
-        h2slide.classList.remove('scrolled') 
-        body.classList.remove('scrolled')
+        
+     
     }
 }
 
