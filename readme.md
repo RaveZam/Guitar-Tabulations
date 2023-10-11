@@ -1,15 +1,3 @@
-Play Buttons On Video Screen
+A guitar website/portfolio i have built for my youtube channel and for all of my viewers to grab all the tabs they need in 1 site!
 
-Make the About me Page similar to Sungha Jung 
-With Why I Started Guitar
-How i Learned
-Who Pushed me 
-Who Taught me for the first few weeks 
-How I Improved
-When i Started making youtube vidoes
- etc etc
- Find other websites to copy the design.
-
-
-
-
+Built with pure vanilla html/css and javascript in the span of 1 month and my first attempt in making a site <3
