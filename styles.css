@@ -64,11 +64,10 @@ body{
         color: #8B4513;
     }
     .nav a{
+        display: inline-flex;
         color: black;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-bottom: 10px;
-        padding-top: 10px;
+        padding-top: 2px;
+        padding-bottom: 2px;
        
     }
 
@@ -251,6 +250,7 @@ body{
 
 
 .nav a{
+    display: inline-flex;
     text-decoration: none;
     color: rgb(0, 0, 0);
     transition: all 0.5s ease;
@@ -261,7 +261,7 @@ body{
 }
 
 .nav a:hover{
-    padding-right: 30px;
+    transform: translateX(-10px);
 }
 
 .nav li{
@@ -274,9 +274,9 @@ body{
 }
 
 .foot{
-    
     bottom: 0;
     width: 100%;
+    z-index: 5;
 }
 
 .row{
@@ -783,14 +783,12 @@ ul{
 
 
 .about-me-container{
-
     display: flex;
     justify-content: center;
 
 }
 
 .about-me-column{
-  
     display: flex;
     padding-top: 150px;
     width: 50%;
@@ -806,6 +804,7 @@ ul{
     position: absolute;
     width: 50%;
     text-align: center;
+    padding-top: 110px;
     
 }
 
@@ -1163,6 +1162,8 @@ ul{
         z-index: 3;
     }
 }
+
+
 
 
 
