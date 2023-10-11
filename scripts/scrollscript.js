@@ -31,7 +31,6 @@ window.addEventListener('scroll', () => {
 
 function handleScroll(){
     const scrollY = window.scrollY;
-    console.log(scrollY)
 
     // Add a class to the header when scrolling down
     if (scrollY > 200) { // Adjust the threshold as needed
