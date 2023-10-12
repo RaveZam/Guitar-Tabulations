@@ -1097,7 +1097,7 @@ ul{
     .nav a {
         padding-left: 0px;
         padding-right: 15px;
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .nav{
@@ -1181,10 +1181,6 @@ ul{
        
     }
 
-    .tabcontainer{
-     
-    }
-
     .tabs-container{
         justify-content: center;
         transform: translateX(-100px);
@@ -1221,18 +1217,18 @@ ul{
     }
 
     .page-vids{
-        height: 170vh;
+        height: 150vh;
+        z-index: 3;
     }
 
     footer{
         .about-me ul li{
+        
             padding-left: 14px;
             padding-right: 0px;
             text-decoration:underline;
-        }
-        
+        } 
     }
-
 }
 
 /* Footer Stuff */
@@ -1241,7 +1237,7 @@ footer{
     position: relative;
     bottom: 0;
     width: 100%;
-    z-index: 3;
+    z-index: 2;
     margin-top: 30px;
 }
 
