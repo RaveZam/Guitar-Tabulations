@@ -843,9 +843,10 @@ ul{
 .cursor-outline{
     width: 30px;
     height: 30px;
+ 
     border: 2px solid hsla(45, 88%, 27%, 0.862);
 }
-
+////
 .page-vids{
     overflow:hidden;
     height: 100vh;
