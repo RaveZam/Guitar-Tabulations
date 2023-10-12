@@ -127,7 +127,6 @@ body{
     padding-top: 60px;
     padding-left: 10px;
   
-    
 }
 
 .slide.slide-out{
@@ -200,7 +199,6 @@ body{
 
 .nav li{
     display: inline;
-  
     transition: all 0.5s ease;
 }
 .nav{
@@ -846,7 +844,7 @@ ul{
  
     border: 2px solid hsla(45, 88%, 27%, 0.862);
 }
-////
+
 .page-vids{
     overflow:hidden;
     height: 100vh;
@@ -868,7 +866,7 @@ ul{
 .tabssection{
     overflow: hidden;
     width: 100%;
-    height: 110vh;
+    height: 120vh;
 }
 
 .tabs-container{
@@ -918,6 +916,7 @@ ul{
     opacity: 0%;
 }
 .tabs-desc{
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     position: relative;
     font-family: 'Prata', serif;
     font-size: 80px;
@@ -949,15 +948,14 @@ ul{
 
 .tabs-button{
     position: relative;
-    display: flex;
-    background-color: rgb(208, 127, 45);
+    background-color: rgb(208, 148, 89);
     transition: all 0.5s ease;
     border: none;
 }
 
 .tabs-button:hover{
     transform: translateX(10px);
-    background-color: rgb(202, 109, 16);
+    background-color: rgb(202, 126, 50);
 }
 
 .button{
@@ -1066,6 +1064,10 @@ ul{
     }
 }
 
+.tablature{
+    opacity: 0%;
+}
+
 @media screen and (max-width: 768px) {
 
     .circles{
@@ -1075,25 +1077,32 @@ ul{
         visibility: hidden;
     }
 
-
+   
     .welcome-slide{
         font-size: 50px;
-    }
-    .slide2{
-        font-size: 30px;
-        position: absolute;
-        padding-top: 50px;
-        padding-left: 50px;
+       
     }
 
- 
-    .main-header.scrolled{
-        .nav li{
-          padding-right: 8px;
-        }
+    .slide-container{
+        flex-direction: column;
+        transform: translateX(-5px);
     }
+   
+    .slide2{
+        padding-top: 0;
+        font-size: 30px;
+       
+    }
+
     .nav a {
-        font-size: 10px;
+        padding-left: 0px;
+        padding-right: 15px;
+        font-size: 15px;
+    }
+
+    .nav{
+        position: relative;
+        transform: translateX(5px);
     }
     .name-title{
         display: none;
@@ -1147,6 +1156,82 @@ ul{
         }
     }
     /*about me section*/
+    .mini-leftsection{
+        position: absolute;
+        transform: translateY(130px);
+    
+    }
+
+    .mini-about-me-desc{
+        text-align: center;
+        font-size: 30px;
+    }
+    .about-me-button{
+       left: 33%;
+    }
+
+    .profilepic{
+        width: 400px;
+        height: auto;
+        transform: translateY(-200px) translateX(-90px);
+    }
+
+    .tabssection{
+        height: 140vh;
+       
+    }
+
+    .tabcontainer{
+     
+    }
+
+    .tabs-container{
+        justify-content: center;
+        transform: translateX(-100px);
+    }
+
+    .tabs-desc-container{
+      
+        border-radius: 50px;
+        padding: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+        backdrop-filter: blur(10px); 
+        margin-top: auto;
+    }
+
+    .tablature{
+        opacity: 100%;
+        font-size: 50px;
+        font-family: 'Prata', serif;
+        position: absolute;
+        transform: translateY(-400px) translateX(90px);
+        
+    }
+    .tabs-desc{
+        margin-left: 10px;
+        font-size: 20px;
+        text-shadow: none;
+    }
+
+    .tabs-button{
+        font-size: 20px;
+        width: 200px;
+        margin-top: 10px;
+    }
+
+    .page-vids{
+        height: 170vh;
+    }
+
+    footer{
+        .about-me ul li{
+            padding-left: 14px;
+            padding-right: 0px;
+            text-decoration:underline;
+        }
+        
+    }
 
 }
 
@@ -1157,6 +1242,7 @@ footer{
     bottom: 0;
     width: 100%;
     z-index: 3;
+    margin-top: 30px;
 }
 
 .about-me{
