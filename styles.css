@@ -592,7 +592,7 @@ ul{
 .tab-price{
     font-size: larger;
 }
-
+//
 .cart-title{
 
     padding-top: 50px;
@@ -1202,8 +1202,8 @@ ul{
         font-family: 'Prata', serif;
         position: absolute;
         transform: translateY(-400px) translateX(90px);
-        
     }
+    
     .tabs-desc{
         margin-left: 10px;
         font-size: 20px;
