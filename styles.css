@@ -592,7 +592,7 @@ ul{
 .tab-price{
     font-size: larger;
 }
-///
+
 .cart-title{
 
     padding-top: 50px;
@@ -836,12 +836,13 @@ ul{
     width: 5px;
     height: 5px;
     background-color: rgb(137, 106, 5);
+    z-index: 10;
 }
 
 .cursor-outline{
     width: 30px;
     height: 30px;
- 
+    z-index: 10;
     border: 2px solid hsla(45, 88%, 27%, 0.862);
 }
 
@@ -1120,7 +1121,7 @@ ul{
     /* Tabs Section */
     .tab-container{
         .tab-row{
-            width: 400px;
+            width: 350px;
 
             .tab-icon-link{
                 display: none;
@@ -1137,7 +1138,7 @@ ul{
     }
     .tab-shop-column{
         .tab-shop-row{
-            width: 400px;
+            width: 500px;
         }
         .songname{
             font-weight: bold;
@@ -1217,9 +1218,37 @@ ul{
     }
 
     .page-vids{
-        height: 150vh;
+        height: 160vh;
         z-index: 3;
     }
+
+    /* About Me Section*/
+
+    .about-me-column{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gears{
+      transform: translateX(-15%);
+       
+    }
+
+    .gear-shop{
+        overflow-x: hidden;
+    }
+
+    /* Contact Me Section*/
+
+    .socmed-container{
+        flex-direction: column;
+    }
+
+    .socmed-image{
+        padding-bottom: 30px;
+    }
+
+
 
     footer{
         .about-me ul li{
@@ -1266,7 +1295,17 @@ footer{
     padding-right: 20px;
 }
 
+.socmed{
+    width: 100%;
+    height: 100vh;
+}
 
+.socmed-container{
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
 
 
 
